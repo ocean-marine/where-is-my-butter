@@ -61,7 +61,19 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: |
-            --allowedTools "Bash(bun install),Bash(bun test:*),Bash(bun run format),Bash(bun typecheck)"
+          claude_args:  |
+            --allowedTools "
+              Bash(bun install),
+              Bash(bun test:*),
+              Bash(bun run format),
+              Bash(bun typecheck),
+              Bash(npm install),
+              Bash(npm ci),
+              Bash(npm run build),
+              Bash(npm run dev),
+              Bash(npm run lint),
+              Bash(npm run test),
+              Bash(npm run format),
+              Bash(npm run typecheck)
+            "
             --model "claude-haiku-4-5"
-
