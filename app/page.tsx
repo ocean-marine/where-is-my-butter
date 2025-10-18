@@ -8,79 +8,74 @@ export default function NotFound() {
 
   return (
     <motion.div
-      // ① full-screen中央寄せをやめ、ほどよい上下パディングに
-      className="flex min-h-[80svh] flex-col items-center justify-start py-16 md:py-20"
+      className="flex flex-col min-h-[90svh] justify-between items-center px-4 py-10 text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div
-        // ② 全体の縦ギャップを一段階締める（6→md:8 で応答的に）
-        className="flex flex-col items-center space-y-6 md:space-y-8"
-      >
-        {/* Company Name */}
+
+      {/* Main Content */}
+      <div className="flex flex-col items-center space-y-5">
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.1, duration: 0.4 }}
-          className="text-2xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-50"
+          className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50"
         >
           道産子乳業株式会社
         </motion.div>
 
-        {/* 404 Error */}
-        <motion.div
+        <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.4 }}
-          className="text-center"
+          transition={{ delay: 0.2, duration: 0.3 }}
+          className="text-5xl font-bold text-zinc-900 dark:text-zinc-50"
         >
-          {/* ③ 見出しを一段階下げ、行間を詰める */}
-          <h1 className="text-5xl md:text-6xl font-bold leading-none text-zinc-900 dark:text-zinc-50">
-            404
-          </h1>
-        </motion.div>
+          404
+        </motion.h1>
 
-        {/* Error Message */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.4 }}
-          // ④ このブロック内も少し締める
-          className="text-center space-y-1 md:space-y-2"
+          transition={{ delay: 0.4, duration: 0.3 }}
+          className="space-y-1"
         >
-          <h2 className="text-lg md:text-2xl font-medium text-zinc-900 dark:text-zinc-50">
+          <h2 className="text-base font-medium text-zinc-900 dark:text-zinc-50">
             ページが見つかりません
           </h2>
-          <p className="text-sm md:text-base text-zinc-600 dark:text-zinc-400">
+          <p className="text-sm text-zinc-600 dark:text-zinc-400">
             お探しのページは見つかりませんでした。
           </p>
         </motion.div>
 
-        {/* Back / Home Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7, duration: 0.4 }}
-          // ⑤ SM以上は横並び、モバイルは縦積み。ギャップも-1段階。
-          className="flex flex-col sm:flex-row gap-2 sm:gap-3"
+          transition={{ delay: 0.6, duration: 0.3 }}
+          className="flex gap-2 mt-2"
         >
           <button
             onClick={() => router.back()}
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-300 bg-white px-5 py-2 text-sm font-medium text-zinc-900 transition-all hover:bg-zinc-50 hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-800 dark:hover:border-zinc-600"
+            className="rounded-lg border border-zinc-300 bg-white px-5 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-800"
           >
-            <span>←</span>
-            <span>戻る</span>
+            ← 戻る
           </button>
 
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-400"
+            className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
           >
-            <span>トップページへ</span>
+            トップページへ
           </Link>
         </motion.div>
       </div>
+
+      {/* Footer */}
+      <footer className="mt-10 text-[11px] text-zinc-500 dark:text-zinc-400 leading-tight">
+        <p>© 道産子乳業株式会社</p>
+        <p>北海道河西郡大正村新通114-51</p>
+        <p className="mt-1 underline underline-offset-2">プライバシーポリシー</p>
+      </footer>
     </motion.div>
   )
 }
