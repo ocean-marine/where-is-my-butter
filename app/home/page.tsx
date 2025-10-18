@@ -112,6 +112,13 @@ export default function DosankoDairyHome() {
             創業
           </li>
           <li>
+            <time dateTime="1967" className="font-medium text-zinc-900 dark:text-zinc-50">
+              1967
+            </time>
+            {' '}
+            道産子牛乳の直売を開始
+          </li>
+          <li>
             <time dateTime="1971" className="font-medium text-zinc-900 dark:text-zinc-50">
               1971
             </time>
@@ -131,6 +138,13 @@ export default function DosankoDairyHome() {
             </time>
             {' '}
             HACCP準拠
+          </li>
+          <li>
+            <time dateTime="2014" className="font-medium text-zinc-900 dark:text-zinc-50">
+              2014
+            </time>
+            {' '}
+            北海道全土のコンビニで道産子アイスクリームの取り扱いが開始
           </li>
         </ol>
 
