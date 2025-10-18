@@ -11,9 +11,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://nim-fawn.vercel.app/'),
-  title: {
-    default: 'Page Not Found | Nim'
-  },
+  title: 'Page Not Found | Nim',
   description: 'Page not found - 404',
 }
 
