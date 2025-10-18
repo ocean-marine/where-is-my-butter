@@ -183,7 +183,7 @@ export default function DosankoDairyHome() {
           北海道河西郡大正村新通114-51
         </address>
         <a
-          href="https://maps.example.com/?q=北海道河西郡大正村新通114-51"
+          href="https://maps.app.goo.gl/pM1Q2dKw1ea72QuL6?g_st=ipc"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
