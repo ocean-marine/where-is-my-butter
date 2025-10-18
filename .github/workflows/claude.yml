@@ -36,4 +36,5 @@ jobs:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: |
             --allowedTools "Bash(bun install),Bash(bun test:*),Bash(bun run format),Bash(bun typecheck)"
-            --model "claude-sonnet-4-5"
+            --model "claude-haiku-4-5"
+
