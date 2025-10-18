@@ -112,6 +112,13 @@ export default function DosankoDairyHome() {
             創業
           </li>
           <li>
+            <time dateTime="1971" className="font-medium text-zinc-900 dark:text-zinc-50">
+              1971
+            </time>
+            {' '}
+            東の方角に第二牛舎を建設
+          </li>
+          <li>
             <time dateTime="1998" className="font-medium text-zinc-900 dark:text-zinc-50">
               1998
             </time>
