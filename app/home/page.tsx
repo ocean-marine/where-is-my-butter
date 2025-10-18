@@ -168,6 +168,13 @@ export default function DosankoDairyHome() {
           </summary>
           <ol className="mt-3 space-y-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
             <li>
+              <time dateTime="2022" className="font-medium text-zinc-900 dark:text-zinc-50">
+                2022
+              </time>
+              {' '}
+              BSEにより200頭を殺処分
+            </li>
+            <li>
               <time dateTime="2025" className="font-medium text-zinc-900 dark:text-zinc-50">
                 2025
               </time>
