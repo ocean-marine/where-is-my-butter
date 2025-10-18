@@ -31,9 +31,9 @@ export default function NotFoundLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={`${geist.variable} ${geistMono.variable}`}>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
+        className="bg-white tracking-tight antialiased dark:bg-zinc-950"
       >
         <ThemeProvider
           enableSystem={true}
