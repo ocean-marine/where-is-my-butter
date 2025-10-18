@@ -194,6 +194,133 @@ export default function DosankoDairyHome() {
           ※工場見学は事前予約制です
         </p>
       </motion.section>
+
+      {/* Features/Values Section */}
+      <motion.section
+        id="features"
+        aria-labelledby="features-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="space-y-3"
+      >
+        <h2
+          id="features-title"
+          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
+          当社の特徴
+        </h2>
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
+          <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-800">
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">
+              こだわりの生乳
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              十勝産の最高品質生乳のみを厳選し、朝霧の中で搾りたての新鮮さを保ちます。
+            </p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-800">
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">
+              低温殺菌
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              牛乳本来の風味と栄養を保つ低温殺菌技術で、安全性と品質を両立。
+            </p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-800">
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">
+              一貫管理
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              集乳から充填まで一貫管理で、徹底した品質管理と食品安全を実現。
+            </p>
+          </div>
+          <div className="rounded-lg border border-zinc-200 p-4 dark:border-zinc-800">
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50 mb-2">
+              サステナビリティ
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              再生可能エネルギー比率30%達成。環境への責任も大切にしています。
+            </p>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Products Section */}
+      <motion.section
+        id="products"
+        aria-labelledby="products-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="space-y-3"
+      >
+        <h2
+          id="products-title"
+          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
+          主な製品
+        </h2>
+        <div className="space-y-2">
+          <div className="rounded-lg bg-zinc-50 p-4 dark:bg-zinc-900">
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50">
+              低温殺菌牛乳
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+              新鮮な十勝産生乳を低温殺菌した、濃厚で香り高い牛乳。毎日の朝食に最適です。
+            </p>
+          </div>
+          <div className="rounded-lg bg-zinc-50 p-4 dark:bg-zinc-900">
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50">
+              ヨーグルト
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+              良質な生乳を使用した濃厚でまろやかなヨーグルト。健康的なおやつにもぴったり。
+            </p>
+          </div>
+          <div className="rounded-lg bg-zinc-50 p-4 dark:bg-zinc-900">
+            <h3 className="font-semibold text-zinc-900 dark:text-zinc-50">
+              チーズ・乳製品
+            </h3>
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 mt-1">
+              十勝産生乳を使用した各種乳製品。小ロット生産で品質にこだわっています。
+            </p>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Contact CTA Section */}
+      <motion.section
+        id="contact"
+        aria-labelledby="contact-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="space-y-3 rounded-lg bg-gradient-to-br from-blue-50 to-cyan-50 p-6 dark:from-blue-950 dark:to-cyan-950"
+      >
+        <h2
+          id="contact-title"
+          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
+          お問い合わせ
+        </h2>
+        <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+          製品のご注文、工場見学のご予約、その他のお問い合わせはお気軽にどうぞ。
+        </p>
+        <div className="flex flex-wrap gap-3 pt-2">
+          <a
+            href="https://dairyfarmerjapan.hateblo.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-lg bg-blue-600 px-4 py-2.5 text-sm font-medium text-white transition-all hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+          >
+            ブログで最新情報をチェック
+          </a>
+          <a
+            href="mailto:info@dosankodairy.jp"
+            className="inline-flex items-center justify-center rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium text-zinc-900 transition-all hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-800"
+          >
+            メールで問い合わせ
+          </a>
+        </div>
+      </motion.section>
     </motion.main>
   )
 }
