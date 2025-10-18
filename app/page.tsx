@@ -8,12 +8,16 @@ export default function NotFound() {
 
   return (
     <motion.div
-      className="flex min-h-screen flex-col items-center justify-center"
+      // ① full-screen中央寄せをやめ、ほどよい上下パディングに
+      className="flex min-h-[80svh] flex-col items-center justify-start py-16 md:py-20"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex flex-col items-center space-y-8">
+      <div
+        // ② 全体の縦ギャップを一段階締める（6→md:8 で応答的に）
+        className="flex flex-col items-center space-y-6 md:space-y-8"
+      >
         {/* Company Name */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
@@ -31,7 +35,8 @@ export default function NotFound() {
           transition={{ delay: 0.3, duration: 0.4 }}
           className="text-center"
         >
-          <h1 className="text-6xl font-bold text-zinc-900 dark:text-zinc-50 md:text-7xl">
+          {/* ③ 見出しを一段階下げ、行間を詰める */}
+          <h1 className="text-5xl md:text-6xl font-bold leading-none text-zinc-900 dark:text-zinc-50">
             404
           </h1>
         </motion.div>
@@ -41,7 +46,8 @@ export default function NotFound() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.4 }}
-          className="text-center space-y-2"
+          // ④ このブロック内も少し締める
+          className="text-center space-y-1 md:space-y-2"
         >
           <h2 className="text-lg md:text-2xl font-medium text-zinc-900 dark:text-zinc-50">
             ページが見つかりません
@@ -51,29 +57,29 @@ export default function NotFound() {
           </p>
         </motion.div>
 
-        {/* Back Button */}
+        {/* Back / Home Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.4 }}
-          className="flex flex-col gap-3"
+          // ⑤ SM以上は横並び、モバイルは縦積み。ギャップも-1段階。
+          className="flex flex-col sm:flex-row gap-2 sm:gap-3"
         >
           <button
             onClick={() => router.back()}
-            className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-300 bg-white px-6 py-2.5 text-sm font-medium text-zinc-900 transition-all hover:bg-zinc-50 hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-800 dark:hover:border-zinc-600"
+            className="inline-flex items-center justify-center gap-2 rounded-lg border border-zinc-300 bg-white px-5 py-2 text-sm font-medium text-zinc-900 transition-all hover:bg-zinc-50 hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-800 dark:hover:border-zinc-600"
           >
             <span>←</span>
             <span>戻る</span>
           </button>
 
           <Link
-            href="/home"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-2.5 text-sm font-medium text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-400"
+            href="/"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-400"
           >
-            <span>ホームページへ</span>
+            <span>トップページへ</span>
           </Link>
         </motion.div>
-
       </div>
     </motion.div>
   )
