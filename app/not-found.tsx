@@ -3,7 +3,7 @@ import { motion } from 'motion/react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
-export default function NotFound() {
+export default function NotFoundPage() {
   const router = useRouter()
 
   return (
@@ -67,10 +67,10 @@ export default function NotFound() {
           </button>
 
           <Link
-            href="/home"
+            href="/"
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-6 py-2.5 text-sm font-medium text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-400"
           >
-            <span>ホームページへ</span>
+            <span>トップページへ</span>
           </Link>
         </motion.div>
 
