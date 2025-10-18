@@ -50,7 +50,7 @@ export function AnimatedBackground({
   return Children.map(children, (child: ReactElement<HTMLAttributes<HTMLElement> & { 'data-id': string } & Record<string, string | boolean | undefined>>, index) => {
     const id = child.props['data-id']
 
-    const interactionProps = enableHover
+    const interactionProps: Record<string, unknown> = enableHover
       ? {
           onMouseEnter: () => handleSetActiveId(id),
           onMouseLeave: () => handleSetActiveId(null),
@@ -66,7 +66,7 @@ export function AnimatedBackground({
         className: cn('relative inline-flex', child.props.className),
         'data-checked': activeId === id ? 'true' : 'false',
         ...interactionProps,
-      },
+      } as Parameters<typeof cloneElement>[1],
       <>
         <AnimatePresence initial={false}>
           {activeId === id && (
