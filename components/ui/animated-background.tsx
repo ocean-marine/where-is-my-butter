@@ -13,8 +13,8 @@ import {
 
 export type AnimatedBackgroundProps = {
   children:
-    | ReactElement<HTMLAttributes<HTMLElement> & { 'data-id': string; [key: string]: any }>[]
-    | ReactElement<HTMLAttributes<HTMLElement> & { 'data-id': string; [key: string]: any }>
+    | ReactElement<HTMLAttributes<HTMLElement> & { 'data-id': string } & Record<string, string | boolean | undefined>>[]
+    | ReactElement<HTMLAttributes<HTMLElement> & { 'data-id': string } & Record<string, string | boolean | undefined>>
   defaultValue?: string
   onValueChange?: (newActiveId: string | null) => void
   className?: string
@@ -47,7 +47,7 @@ export function AnimatedBackground({
     }
   }, [defaultValue])
 
-  return Children.map(children, (child: ReactElement<HTMLAttributes<HTMLElement> & { 'data-id': string; [key: string]: any }>, index) => {
+  return Children.map(children, (child: ReactElement<HTMLAttributes<HTMLElement> & { 'data-id': string } & Record<string, string | boolean | undefined>>, index) => {
     const id = child.props['data-id']
 
     const interactionProps = enableHover
