@@ -60,7 +60,7 @@ export default function DosankoDairyHome() {
             所在地
           </a>
           <a
-            href="https://example.com/diary"
+            href="https://dairyfarmerjapan.hateblo.jp/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-lg border border-zinc-300 bg-white px-4 py-2.5 text-sm font-medium text-zinc-900 transition-all hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-50 dark:hover:bg-zinc-900"
