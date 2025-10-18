@@ -1,24 +1,22 @@
 'use client'
-import { TextEffect } from '@/components/ui/text-effect'
 import Link from 'next/link'
 
 export function Header() {
   return (
     <header className="mb-8 flex items-center justify-between">
       <div>
-        <Link href="/" className="font-medium text-black dark:text-white">
-          Julien Nim
+        <Link href="/" className="font-semibold text-lg tracking-tight text-black dark:text-white">
+          DOSANKO DAIRY
         </Link>
-        <TextEffect
-          as="p"
-          preset="fade"
-          per="char"
-          className="text-zinc-600 dark:text-zinc-500"
-          delay={0.5}
-        >
-          Design Engineer
-        </TextEffect>
       </div>
+      <nav>
+        <a
+          href="#contact"
+          className="text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          お問い合わせ
+        </a>
+      </nav>
     </header>
   )
 }
