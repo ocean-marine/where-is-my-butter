@@ -72,35 +72,6 @@ export default function DosankoDairyHome() {
           </p>
         </div>
       </motion.section>
-      {/* Location Section */}
-      <motion.section
-        id="location"
-        aria-labelledby="location-title"
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-        className="space-y-3"
-      >
-        <h2
-          id="location-title"
-          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
-        >
-          所在地
-        </h2>
-        <address className="not-italic text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          北海道河西郡大正村新通114-51
-        </address>
-        <a
-          href="https://maps.app.goo.gl/4bJ61E5oaK8o7wHy8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-        >
-          地図で開く
-        </a>
-        <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-          ※工場見学は事前予約制です
-        </p>
-      </motion.section>
       
       {/* Features/Values Section */}
       <motion.section
@@ -274,6 +245,38 @@ export default function DosankoDairyHome() {
           </ol>
         </details>
       </motion.section>
+
+      {/* Location Section */}
+      <motion.section
+        id="location"
+        aria-labelledby="location-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="space-y-3"
+      >
+        <h2
+          id="location-title"
+          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
+          所在地
+        </h2>
+        <address className="not-italic text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+          北海道河西郡大正村新通114-51
+        </address>
+        <a
+          href="https://maps.app.goo.gl/4bJ61E5oaK8o7wHy8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          地図で開く
+        </a>
+        <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+          ※工場見学は事前予約制です
+        </p>
+      </motion.section>
+      
+      
       {/* Contact CTA Section */}
       <motion.section
         id="contact"
