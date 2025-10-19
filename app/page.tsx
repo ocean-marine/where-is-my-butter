@@ -54,13 +54,6 @@ export default function NotFound() {
           transition={{ delay: 0.6, duration: 0.3 }}
           className="flex gap-2 mt-2"
         >
-          <button
-            onClick={() => router.back()}
-            className="rounded-lg border border-zinc-300 bg-white px-5 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-50 dark:hover:bg-zinc-800"
-          >
-            ← 戻る
-          </button>
-
           <Link
             href="/home"
             className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
