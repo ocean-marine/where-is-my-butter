@@ -45,39 +45,6 @@ export default function DosankoDairyHome() {
           </p>
         </div>
       </motion.section>
-
-      {/* Contact CTA Section */}
-      <motion.section
-        id="contact"
-        aria-labelledby="contact-title"
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-        className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 p-8 sm:p-10 dark:from-blue-700 dark:via-cyan-600 dark:to-blue-700"
-      >
-        {/* Background decoration */}
-        <div className="absolute -inset-px opacity-20 bg-gradient-to-r from-white to-transparent rounded-2xl" />
-        <div className="relative">
-          <h2
-            id="contact-title"
-            className="text-2xl sm:text-3xl font-bold text-white mb-3"
-          >
-            ブログ
-          </h2>
-          <p className="text-sm sm:text-base text-blue-50 mb-6">
-            もっと酪農がたのしくなるコンテンツです。 酪農についてテキストや動画で紹介します。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href="https://dairyfarmerjapan.hateblo.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 text-sm font-semibold transition-all hover:bg-blue-50 hover:shadow-lg dark:bg-zinc-900 dark:text-cyan-400 dark:hover:bg-zinc-800"
-            >
-              📝 ブログで最新情報をチェック
-            </a>
-          </div>
-        </div>
-      </motion.section>
       
       {/* About Section */}
       <motion.section
@@ -105,6 +72,36 @@ export default function DosankoDairyHome() {
           </p>
         </div>
       </motion.section>
+      {/* Location Section */}
+      <motion.section
+        id="location"
+        aria-labelledby="location-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="space-y-3"
+      >
+        <h2
+          id="location-title"
+          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
+          所在地
+        </h2>
+        <address className="not-italic text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+          北海道河西郡大正村新通114-51
+        </address>
+        <a
+          href="https://maps.app.goo.gl/4bJ61E5oaK8o7wHy8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          地図で開く
+        </a>
+        <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+          ※工場見学は事前予約制です
+        </p>
+      </motion.section>
+      
       {/* Features/Values Section */}
       <motion.section
         id="features"
@@ -277,36 +274,39 @@ export default function DosankoDairyHome() {
           </ol>
         </details>
       </motion.section>
-
-      {/* Location Section */}
+      {/* Contact CTA Section */}
       <motion.section
-        id="location"
-        aria-labelledby="location-title"
+        id="contact"
+        aria-labelledby="contact-title"
         variants={VARIANTS_SECTION}
         transition={TRANSITION_SECTION}
-        className="space-y-3"
+        className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 p-8 sm:p-10 dark:from-blue-700 dark:via-cyan-600 dark:to-blue-700"
       >
-        <h2
-          id="location-title"
-          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
-        >
-          所在地
-        </h2>
-        <address className="not-italic text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          北海道河西郡大正村新通114-51
-        </address>
-        <a
-          href="https://maps.app.goo.gl/4bJ61E5oaK8o7wHy8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-        >
-          地図で開く
-        </a>
-        <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-          ※工場見学は事前予約制です
-        </p>
+        {/* Background decoration */}
+        <div className="absolute -inset-px opacity-20 bg-gradient-to-r from-white to-transparent rounded-2xl" />
+        <div className="relative">
+          <h2
+            id="contact-title"
+            className="text-2xl sm:text-3xl font-bold text-white mb-3"
+          >
+            ブログ
+          </h2>
+          <p className="text-sm sm:text-base text-blue-50 mb-6">
+            もっと酪農がたのしくなるコンテンツです。 酪農についてテキストや動画で紹介します。
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://dairyfarmerjapan.hateblo.jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 text-sm font-semibold transition-all hover:bg-blue-50 hover:shadow-lg dark:bg-zinc-900 dark:text-cyan-400 dark:hover:bg-zinc-800"
+            >
+              📝 ブログで最新情報をチェック
+            </a>
+          </div>
+        </div>
       </motion.section>
+    
     </motion.main>
   )
 }
