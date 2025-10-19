@@ -4,8 +4,6 @@ import Link from 'next/link'
 export function Header() {
   const navItems = [
     { href: '#about', label: '企業情報' },
-    { href: '#features', label: '特徴' },
-    { href: '#products', label: '製品' },
     { href: '#contact', label: 'お問い合わせ' },
   ]
 
