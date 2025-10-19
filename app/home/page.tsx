@@ -64,7 +64,7 @@ export default function DosankoDairyHome() {
             ブログ
           </h2>
           <p className="text-sm sm:text-base text-blue-50 mb-6">
-            製品のご注文、工場見学のご予約、その他のお問い合わせはお気軽にどうぞ。
+            もっと酪農がたのしくなるコンテンツです。 酪農についてテキストや動画で紹介します。
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
