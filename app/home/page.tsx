@@ -331,63 +331,6 @@ export default function DosankoDairyHome() {
           </div>
         </div>
       </motion.section>
-
-      {/* Products Section */}
-      <motion.section
-        id="products"
-        aria-labelledby="products-title"
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-        className="space-y-4"
-      >
-        <h2
-          id="products-title"
-          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
-        >
-          主な製品
-        </h2>
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-3">
-          {/* Product Card 1 */}
-          <div className="group relative overflow-hidden rounded-xl border border-blue-200 bg-gradient-to-br from-white to-blue-50 p-6 transition-all hover:shadow-lg hover:border-blue-400 dark:border-blue-800 dark:from-zinc-900 dark:to-blue-950 dark:hover:border-blue-600">
-            <div className="absolute top-0 right-0 h-20 w-20 -mr-10 -mt-10 rounded-full bg-blue-100 opacity-50 dark:bg-blue-900" />
-            <div className="relative">
-              <div className="mb-3 text-3xl">🥛</div>
-              <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-50 mb-2">
-                低温殺菌牛乳
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                新鮮な十勝産生乳を低温殺菌した、濃厚で香り高い牛乳。毎日の朝食に最適です。
-              </p>
-            </div>
-          </div>
-          {/* Product Card 2 */}
-          <div className="group relative overflow-hidden rounded-xl border border-purple-200 bg-gradient-to-br from-white to-purple-50 p-6 transition-all hover:shadow-lg hover:border-purple-400 dark:border-purple-800 dark:from-zinc-900 dark:to-purple-950 dark:hover:border-purple-600">
-            <div className="absolute top-0 right-0 h-20 w-20 -mr-10 -mt-10 rounded-full bg-purple-100 opacity-50 dark:bg-purple-900" />
-            <div className="relative">
-              <div className="mb-3 text-3xl">🥣</div>
-              <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-50 mb-2">
-                ヨーグルト
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                良質な生乳を使用した濃厚でまろやかなヨーグルト。健康的なおやつにもぴったり。
-              </p>
-            </div>
-          </div>
-          {/* Product Card 3 */}
-          <div className="group relative overflow-hidden rounded-xl border border-yellow-200 bg-gradient-to-br from-white to-yellow-50 p-6 transition-all hover:shadow-lg hover:border-yellow-400 dark:border-yellow-800 dark:from-zinc-900 dark:to-yellow-950 dark:hover:border-yellow-600">
-            <div className="absolute top-0 right-0 h-20 w-20 -mr-10 -mt-10 rounded-full bg-yellow-100 opacity-50 dark:bg-yellow-900" />
-            <div className="relative">
-              <div className="mb-3 text-3xl">🧀</div>
-              <h3 className="font-bold text-lg text-zinc-900 dark:text-zinc-50 mb-2">
-                チーズ・乳製品
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                十勝産生乳を使用した各種乳製品。小ロット生産で品質にこだわっています。
-              </p>
-            </div>
-          </div>
-        </div>
-      </motion.section>
     </motion.main>
   )
 }
