@@ -44,22 +44,6 @@ export default function DosankoDairyHome() {
             十勝の朝霧からはじまる一杯を、そのまま。
           </p>
         </div>
-
-        {/* Action Buttons */}
-        <div className="flex flex-wrap gap-3 pt-2">
-          <a
-            href="#about"
-            className="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 px-6 py-3 text-sm font-semibold text-white transition-all hover:shadow-lg hover:from-blue-700 hover:to-cyan-700 dark:from-blue-500 dark:to-cyan-500 dark:hover:from-blue-600 dark:hover:to-cyan-600"
-          >
-            企業情報をチェック
-          </a>
-          <a
-            href="#features"
-            className="inline-flex items-center justify-center rounded-lg border-2 border-zinc-300 bg-white px-6 py-3 text-sm font-semibold text-zinc-900 transition-all hover:bg-zinc-50 hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-950 dark:text-zinc-50 dark:hover:bg-zinc-900 dark:hover:border-zinc-600"
-          >
-            当社の特徴
-          </a>
-        </div>
       </motion.section>
 
       {/* Contact CTA Section */}
@@ -77,7 +61,7 @@ export default function DosankoDairyHome() {
             id="contact-title"
             className="text-2xl sm:text-3xl font-bold text-white mb-3"
           >
-            お問い合わせ
+            ブログ
           </h2>
           <p className="text-sm sm:text-base text-blue-50 mb-6">
             製品のご注文、工場見学のご予約、その他のお問い合わせはお気軽にどうぞ。
@@ -90,12 +74,6 @@ export default function DosankoDairyHome() {
               className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 text-sm font-semibold transition-all hover:bg-blue-50 hover:shadow-lg dark:bg-zinc-900 dark:text-cyan-400 dark:hover:bg-zinc-800"
             >
               📝 ブログで最新情報をチェック
-            </a>
-            <a
-              href="mailto:info@dosankodairy.jp"
-              className="inline-flex items-center justify-center rounded-lg border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white hover:bg-opacity-10 dark:border-cyan-400 dark:text-cyan-50 dark:hover:bg-cyan-400 dark:hover:bg-opacity-10"
-            >
-              ✉️ メールで問い合わせ
             </a>
           </div>
         </div>
