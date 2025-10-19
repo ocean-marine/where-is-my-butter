@@ -28,32 +28,31 @@ export default function NotFound() {
           道産子乳業株式会社
         </motion.div>
 
-        {/* 404 Error */}
+        {/* Campaign End Message */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.4 }}
           className="text-center"
         >
-          {/* ③ 見出しを一段階下げ、行間を詰める */}
-          <h1 className="text-5xl md:text-6xl font-bold leading-none text-zinc-900 dark:text-zinc-50">
-            404
+          {/* キャンペーン終了メッセージ */}
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight text-zinc-900 dark:text-zinc-50">
+            本キャンペーンは<br />終了しました
           </h1>
         </motion.div>
 
-        {/* Error Message */}
+        {/* Campaign Details */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.4 }}
-          // ④ このブロック内も少し締める
-          className="text-center space-y-1 md:space-y-2"
+          className="text-center space-y-2 md:space-y-3"
         >
-          <h2 className="text-lg md:text-2xl font-medium text-zinc-900 dark:text-zinc-50">
-            ページが見つかりません
-          </h2>
+          <p className="text-lg md:text-xl font-semibold text-pink-600 dark:text-pink-400">
+            牛乳1年分プレゼント
+          </p>
           <p className="text-sm md:text-base text-zinc-600 dark:text-zinc-400">
-            お探しのページは見つかりませんでした。
+            ご応募ありがとうございました。
           </p>
         </motion.div>
 
@@ -77,7 +76,7 @@ export default function NotFound() {
             href="/"
             className="inline-flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-blue-600 dark:hover:bg-blue-400"
           >
-            <span>トップページへ</span>
+            <span>ホームに戻る</span>
           </Link>
         </motion.div>
       </div>
