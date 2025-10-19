@@ -62,6 +62,45 @@ export default function DosankoDairyHome() {
         </div>
       </motion.section>
 
+      {/* Contact CTA Section */}
+      <motion.section
+        id="contact"
+        aria-labelledby="contact-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 p-8 sm:p-10 dark:from-blue-700 dark:via-cyan-600 dark:to-blue-700"
+      >
+        {/* Background decoration */}
+        <div className="absolute -inset-px opacity-20 bg-gradient-to-r from-white to-transparent rounded-2xl" />
+        <div className="relative">
+          <h2
+            id="contact-title"
+            className="text-2xl sm:text-3xl font-bold text-white mb-3"
+          >
+            お問い合わせ
+          </h2>
+          <p className="text-sm sm:text-base text-blue-50 mb-6">
+            製品のご注文、工場見学のご予約、その他のお問い合わせはお気軽にどうぞ。
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href="https://dairyfarmerjapan.hateblo.jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 text-sm font-semibold transition-all hover:bg-blue-50 hover:shadow-lg dark:bg-zinc-900 dark:text-cyan-400 dark:hover:bg-zinc-800"
+            >
+              📝 ブログで最新情報をチェック
+            </a>
+            <a
+              href="mailto:info@dosankodairy.jp"
+              className="inline-flex items-center justify-center rounded-lg border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white hover:bg-opacity-10 dark:border-cyan-400 dark:text-cyan-50 dark:hover:bg-cyan-400 dark:hover:bg-opacity-10"
+            >
+              ✉️ メールで問い合わせ
+            </a>
+          </div>
+        </div>
+      </motion.section>
+      
       {/* About Section */}
       <motion.section
         id="about"
@@ -346,45 +385,6 @@ export default function DosankoDairyHome() {
                 十勝産生乳を使用した各種乳製品。小ロット生産で品質にこだわっています。
               </p>
             </div>
-          </div>
-        </div>
-      </motion.section>
-
-      {/* Contact CTA Section */}
-      <motion.section
-        id="contact"
-        aria-labelledby="contact-title"
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-        className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 p-8 sm:p-10 dark:from-blue-700 dark:via-cyan-600 dark:to-blue-700"
-      >
-        {/* Background decoration */}
-        <div className="absolute -inset-px opacity-20 bg-gradient-to-r from-white to-transparent rounded-2xl" />
-        <div className="relative">
-          <h2
-            id="contact-title"
-            className="text-2xl sm:text-3xl font-bold text-white mb-3"
-          >
-            お問い合わせ
-          </h2>
-          <p className="text-sm sm:text-base text-blue-50 mb-6">
-            製品のご注文、工場見学のご予約、その他のお問い合わせはお気軽にどうぞ。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <a
-              href="https://dairyfarmerjapan.hateblo.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 text-sm font-semibold transition-all hover:bg-blue-50 hover:shadow-lg dark:bg-zinc-900 dark:text-cyan-400 dark:hover:bg-zinc-800"
-            >
-              📝 ブログで最新情報をチェック
-            </a>
-            <a
-              href="mailto:info@dosankodairy.jp"
-              className="inline-flex items-center justify-center rounded-lg border-2 border-white bg-transparent px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white hover:bg-opacity-10 dark:border-cyan-400 dark:text-cyan-50 dark:hover:bg-cyan-400 dark:hover:bg-opacity-10"
-            >
-              ✉️ メールで問い合わせ
-            </a>
           </div>
         </div>
       </motion.section>
