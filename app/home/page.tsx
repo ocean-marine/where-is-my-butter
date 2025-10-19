@@ -105,7 +105,83 @@ export default function DosankoDairyHome() {
           </p>
         </div>
       </motion.section>
-
+      {/* Features/Values Section */}
+      <motion.section
+        id="features"
+        aria-labelledby="features-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="space-y-4"
+      >
+        <h2
+          id="features-title"
+          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
+          当社の特徴
+        </h2>
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
+          {/* Feature Card 1 */}
+          <div className="group relative overflow-hidden rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-blue-0 p-5 transition-all hover:shadow-lg hover:border-blue-300 dark:border-blue-900 dark:from-blue-950 dark:to-blue-900 dark:hover:border-blue-700">
+            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-blue-200 to-cyan-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-blue-700 dark:to-cyan-700" />
+            <div className="relative">
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900">
+                <span className="text-lg">🥛</span>
+              </div>
+              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
+                こだわりの生乳
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                十勝産の最高品質生乳のみを厳選し、朝霧の中で搾りたての新鮮さを保ちます。
+              </p>
+            </div>
+          </div>
+          {/* Feature Card 2 */}
+          <div className="group relative overflow-hidden rounded-xl border border-cyan-100 bg-gradient-to-br from-cyan-50 to-cyan-0 p-5 transition-all hover:shadow-lg hover:border-cyan-300 dark:border-cyan-900 dark:from-cyan-950 dark:to-cyan-900 dark:hover:border-cyan-700">
+            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-cyan-200 to-blue-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-cyan-700 dark:to-blue-700" />
+            <div className="relative">
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-100 dark:bg-cyan-900">
+                <span className="text-lg">❄️</span>
+              </div>
+              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
+                低温殺菌
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                牛乳本来の風味と栄養を保つ低温殺菌技術で、安全性と品質を両立。
+              </p>
+            </div>
+          </div>
+          {/* Feature Card 3 */}
+          <div className="group relative overflow-hidden rounded-xl border border-amber-100 bg-gradient-to-br from-amber-50 to-amber-0 p-5 transition-all hover:shadow-lg hover:border-amber-300 dark:border-amber-900 dark:from-amber-950 dark:to-amber-900 dark:hover:border-amber-700">
+            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-amber-200 to-orange-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-amber-700 dark:to-orange-700" />
+            <div className="relative">
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-100 dark:bg-amber-900">
+                <span className="text-lg">🔗</span>
+              </div>
+              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
+                一貫管理
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                集乳から充填まで一貫管理で、徹底した品質管理と食品安全を実現。
+              </p>
+            </div>
+          </div>
+          {/* Feature Card 4 */}
+          <div className="group relative overflow-hidden rounded-xl border border-green-100 bg-gradient-to-br from-green-50 to-green-0 p-5 transition-all hover:shadow-lg hover:border-green-300 dark:border-green-900 dark:from-green-950 dark:to-green-900 dark:hover:border-green-700">
+            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-green-200 to-emerald-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-green-700 dark:to-emerald-700" />
+            <div className="relative">
+              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-green-100 dark:bg-green-900">
+                <span className="text-lg">🌱</span>
+              </div>
+              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
+                サステナビリティ
+              </h3>
+              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                再生可能エネルギー比率30%達成。環境への責任も大切にしています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </motion.section>
       {/* History Section */}
       <motion.section
         id="history"
@@ -230,84 +306,6 @@ export default function DosankoDairyHome() {
         <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
           ※工場見学は事前予約制です
         </p>
-      </motion.section>
-
-      {/* Features/Values Section */}
-      <motion.section
-        id="features"
-        aria-labelledby="features-title"
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-        className="space-y-4"
-      >
-        <h2
-          id="features-title"
-          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
-        >
-          当社の特徴
-        </h2>
-        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
-          {/* Feature Card 1 */}
-          <div className="group relative overflow-hidden rounded-xl border border-blue-100 bg-gradient-to-br from-blue-50 to-blue-0 p-5 transition-all hover:shadow-lg hover:border-blue-300 dark:border-blue-900 dark:from-blue-950 dark:to-blue-900 dark:hover:border-blue-700">
-            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-blue-200 to-cyan-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-blue-700 dark:to-cyan-700" />
-            <div className="relative">
-              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 dark:bg-blue-900">
-                <span className="text-lg">🥛</span>
-              </div>
-              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
-                こだわりの生乳
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                十勝産の最高品質生乳のみを厳選し、朝霧の中で搾りたての新鮮さを保ちます。
-              </p>
-            </div>
-          </div>
-          {/* Feature Card 2 */}
-          <div className="group relative overflow-hidden rounded-xl border border-cyan-100 bg-gradient-to-br from-cyan-50 to-cyan-0 p-5 transition-all hover:shadow-lg hover:border-cyan-300 dark:border-cyan-900 dark:from-cyan-950 dark:to-cyan-900 dark:hover:border-cyan-700">
-            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-cyan-200 to-blue-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-cyan-700 dark:to-blue-700" />
-            <div className="relative">
-              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-cyan-100 dark:bg-cyan-900">
-                <span className="text-lg">❄️</span>
-              </div>
-              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
-                低温殺菌
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                牛乳本来の風味と栄養を保つ低温殺菌技術で、安全性と品質を両立。
-              </p>
-            </div>
-          </div>
-          {/* Feature Card 3 */}
-          <div className="group relative overflow-hidden rounded-xl border border-amber-100 bg-gradient-to-br from-amber-50 to-amber-0 p-5 transition-all hover:shadow-lg hover:border-amber-300 dark:border-amber-900 dark:from-amber-950 dark:to-amber-900 dark:hover:border-amber-700">
-            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-amber-200 to-orange-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-amber-700 dark:to-orange-700" />
-            <div className="relative">
-              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-amber-100 dark:bg-amber-900">
-                <span className="text-lg">🔗</span>
-              </div>
-              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
-                一貫管理
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                集乳から充填まで一貫管理で、徹底した品質管理と食品安全を実現。
-              </p>
-            </div>
-          </div>
-          {/* Feature Card 4 */}
-          <div className="group relative overflow-hidden rounded-xl border border-green-100 bg-gradient-to-br from-green-50 to-green-0 p-5 transition-all hover:shadow-lg hover:border-green-300 dark:border-green-900 dark:from-green-950 dark:to-green-900 dark:hover:border-green-700">
-            <div className="absolute -inset-px rounded-xl bg-gradient-to-br from-green-200 to-emerald-200 opacity-0 transition-opacity group-hover:opacity-10 dark:from-green-700 dark:to-emerald-700" />
-            <div className="relative">
-              <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-green-100 dark:bg-green-900">
-                <span className="text-lg">🌱</span>
-              </div>
-              <h3 className="font-bold text-zinc-900 dark:text-zinc-50 mb-2">
-                サステナビリティ
-              </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                再生可能エネルギー比率30%達成。環境への責任も大切にしています。
-              </p>
-            </div>
-          </div>
-        </div>
       </motion.section>
     </motion.main>
   )
