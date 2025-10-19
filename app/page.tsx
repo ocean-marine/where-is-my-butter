@@ -41,11 +41,8 @@ export default function NotFound() {
           className="space-y-1"
         >
           <h2 className="text-base font-medium text-zinc-900 dark:text-zinc-50">
-            ページが見つかりません
+            本キャンペーンは終了しました。
           </h2>
-          <p className="text-sm text-zinc-600 dark:text-zinc-400">
-            お探しのページは見つかりませんでした。
-          </p>
         </motion.div>
 
         <motion.div
