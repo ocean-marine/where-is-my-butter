@@ -15,7 +15,7 @@ export default function NotFound() {
 
       {/* Campaign Banner with Image */}
       <div className="relative w-full">
-        <div className="relative h-80 w-full overflow-hidden">
+        <div className="relative h-48 md:h-80 w-full overflow-hidden">
           <Image
             src="/IMG_7010.png"
             alt="Campaign"
