@@ -41,35 +41,6 @@ export default function NotFound() {
       {/* Main Content */}
       <div className="flex flex-col items-center space-y-5 px-4 py-10">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.1, duration: 0.4 }}
-          className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50"
-        >
-          道産子乳業株式会社
-        </motion.div>
-
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.3 }}
-          className="text-5xl font-bold text-zinc-900 dark:text-zinc-50"
-        >
-          404
-        </motion.h1>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.3 }}
-          className="space-y-1"
-        >
-          <h2 className="text-base font-medium text-zinc-900 dark:text-zinc-50">
-            本キャンペーンは終了しました。
-          </h2>
-        </motion.div>
-
-        <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.3 }}
