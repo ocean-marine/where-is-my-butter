@@ -7,7 +7,7 @@ export default function NotFound() {
 
   return (
     <motion.div
-      className="flex flex-col min-h-[90svh] justify-between items-center text-center"
+      className="flex flex-col min-h-svh items-center text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -36,28 +36,26 @@ export default function NotFound() {
               本キャンペーンは<br></br>終了しました
             </motion.h1>
           </div>
+
+          {/* Back Button - Absolutely positioned at bottom */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+            className="absolute bottom-4 left-1/2 -translate-x-1/2"
+          >
+            <Link
+              href="/home"
+              className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
+            >
+              ← 戻る
+            </Link>
+          </motion.div>
         </div>
       </div>
 
-      {/* Main Content */}
-      <div className="flex flex-col items-center space-y-1 px-4 pt-0 pb-0">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.3 }}
-          className="flex gap-2 -mt-6"
-        >
-          <Link
-            href="/home"
-            className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
-          >
-            ← 戻る
-          </Link>
-        </motion.div>
-      </div>
-
       {/* Footer */}
-      <footer className="mt-10 text-[11px] text-zinc-500 dark:text-zinc-400 leading-tight">
+      <footer className="mt-auto mb-6 text-[11px] text-zinc-500 dark:text-zinc-400 leading-tight">
         <p>© 道産子乳業株式会社</p>
         <p>北海道河西郡大正村新通114-51</p>
         <p className="mt-1 underline underline-offset-2">プライバシーポリシー</p>
