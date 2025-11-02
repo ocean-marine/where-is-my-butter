@@ -17,7 +17,7 @@ export default function NotFound() {
       <div className="relative w-full">
         <div className="relative h-96 w-full overflow-hidden">
           <Image
-            src="/IMG_7006.jpeg"
+            src="/IMG_7010.png"
             alt="Campaign"
             fill
             className="object-cover"
@@ -32,7 +32,7 @@ export default function NotFound() {
               transition={{ delay: 0.2, duration: 0.4 }}
               className="text-4xl font-bold text-zinc-900"
             >
-              本キャンペーンは終了しました
+              本キャンペーンは<br></br>終了しました
             </motion.h1>
           </div>
         </div>
