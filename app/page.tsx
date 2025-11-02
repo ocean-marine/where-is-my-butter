@@ -40,7 +40,7 @@ export default function NotFound() {
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col items-center space-y-5 px-4 py-0">
+      <div className="flex flex-col items-center space-y-5 px-4 pt-0 pb-0">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
