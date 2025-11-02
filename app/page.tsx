@@ -1,19 +1,45 @@
 'use client'
 import { motion } from 'motion/react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function NotFound() {
 
   return (
     <motion.div
-      className="flex flex-col min-h-[90svh] justify-between items-center px-4 py-10 text-center"
+      className="flex flex-col min-h-[90svh] justify-between items-center text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
 
+      {/* Campaign Banner with Image */}
+      <div className="relative w-full">
+        <div className="relative h-96 w-full overflow-hidden">
+          <Image
+            src="/IMG_7006.jpeg"
+            alt="Campaign"
+            fill
+            className="object-cover"
+          />
+          {/* White Fade Overlay */}
+          <div className="absolute inset-0 bg-white/40" />
+          {/* Campaign Ended Message */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.4 }}
+              className="text-4xl font-bold text-zinc-900"
+            >
+              本キャンペーンは終了しました
+            </motion.h1>
+          </div>
+        </div>
+      </div>
+
       {/* Main Content */}
-      <div className="flex flex-col items-center space-y-5">
+      <div className="flex flex-col items-center space-y-5 px-4 py-10">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
