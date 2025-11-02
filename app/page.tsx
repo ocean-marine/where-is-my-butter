@@ -15,7 +15,7 @@ export default function NotFound() {
 
       {/* Campaign Banner with Image */}
       <div className="relative w-full">
-        <div className="relative h-96 w-full overflow-hidden">
+        <div className="relative h-80 w-full overflow-hidden">
           <Image
             src="/IMG_7010.png"
             alt="Campaign"
@@ -30,8 +30,8 @@ export default function NotFound() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.4 }}
-              className="text-5xl font-bold text-zinc-900 drop-shadow-lg"
-              style={{ textShadow: '0 0 4px rgba(255, 255, 255, 1), 2px 2px 0 rgba(255, 255, 255, 1), -2px -2px 0 rgba(255, 255, 255, 1), 2px -2px 0 rgba(255, 255, 255, 1), -2px 2px 0 rgba(255, 255, 255, 1)' }}
+              className="text-5xl font-bold text-zinc-900"
+              style={{ textShadow: '0 0 6px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.6)' }}
             >
               本キャンペーンは<br></br>終了しました
             </motion.h1>
@@ -45,7 +45,7 @@ export default function NotFound() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.3 }}
-          className="flex gap-2 mt-2"
+          className="flex gap-2"
         >
           <Link
             href="/home"
