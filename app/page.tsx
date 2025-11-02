@@ -1,65 +1,61 @@
 'use client'
 import { motion } from 'motion/react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function NotFound() {
 
   return (
     <motion.div
-      className="flex flex-col min-h-[90svh] justify-between items-center px-4 py-10 text-center"
+      className="flex flex-col min-h-svh items-center text-center"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
 
-      {/* Main Content */}
-      <div className="flex flex-col items-center space-y-5">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.1, duration: 0.4 }}
-          className="text-xl font-semibold tracking-tight text-zinc-900 dark:text-zinc-50"
-        >
-          道産子乳業株式会社
-        </motion.div>
+      {/* Campaign Banner with Image */}
+      <div className="relative w-full">
+        <div className="relative h-80 w-full overflow-hidden">
+          <Image
+            src="/IMG_7010.png"
+            alt="Campaign"
+            fill
+            className="object-cover"
+          />
+          {/* White Fade Overlay */}
+          <div className="absolute inset-0 bg-white/50" />
+          {/* Campaign Ended Message */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2, duration: 0.4 }}
+              className="text-5xl font-bold text-zinc-900"
+              style={{ textShadow: '0 0 6px rgba(255, 255, 255, 0.8), 0 0 12px rgba(255, 255, 255, 0.6)' }}
+            >
+              本キャンペーンは<br></br>終了しました
+            </motion.h1>
+          </div>
 
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2, duration: 0.3 }}
-          className="text-5xl font-bold text-zinc-900 dark:text-zinc-50"
-        >
-          404
-        </motion.h1>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.3 }}
-          className="space-y-1"
-        >
-          <h2 className="text-base font-medium text-zinc-900 dark:text-zinc-50">
-            本キャンペーンは終了しました。
-          </h2>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 0.3 }}
-          className="flex gap-2 mt-2"
-        >
-          <Link
-            href="/home"
-            className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
+          {/* Back Button - Absolutely positioned at bottom */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+            className="absolute bottom-4 left-1/2 -translate-x-1/2"
           >
-            ← 戻る
-          </Link>
-        </motion.div>
+            <Link
+              href="/home"
+              className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
+            >
+              ← 戻る
+            </Link>
+          </motion.div>
+        </div>
       </div>
 
       {/* Footer */}
-      <footer className="mt-10 text-[11px] text-zinc-500 dark:text-zinc-400 leading-tight">
+      <footer className="mt-auto mb-6 text-[11px] text-zinc-500 dark:text-zinc-400 leading-tight">
         <p>© 道産子乳業株式会社</p>
         <p>北海道河西郡大正村新通114-51</p>
         <p className="mt-1 underline underline-offset-2">プライバシーポリシー</p>
