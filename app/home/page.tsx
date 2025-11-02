@@ -117,56 +117,14 @@ export default function DosankoDairyHome() {
             低温殺菌ライン導入
           </li>
           <li>
-            <time dateTime="2010" className="font-medium text-zinc-900 dark:text-zinc-50">
-              2010
+            <time dateTime="2000" className="font-medium text-zinc-900 dark:text-zinc-50">
+              2000
             </time>
             {' '}
-            HACCP準拠
-          </li>
-          <li>
-            <time dateTime="2014" className="font-medium text-zinc-900 dark:text-zinc-50">
-              2014
-            </time>
-            {' '}
-            北海道全土のコンビニで道産子アイスクリームの取り扱いが開始
+            廃業
           </li>
         </ol>
 
-        {/* Expandable Details */}
-        <details className="group cursor-pointer">
-          <summary className="inline-flex items-center gap-1 text-sm font-medium text-zinc-700 transition-colors hover:text-zinc-900 dark:text-zinc-300 dark:hover:text-zinc-50">
-            <span>もっと見る</span>
-            <svg
-              className="h-4 w-4 transition-transform group-open:rotate-180"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 14l-7 7m0 0l-7-7m7 7V3"
-              />
-            </svg>
-          </summary>
-          <ol className="mt-3 space-y-2 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-            <li>
-              <time dateTime="2022" className="font-medium text-zinc-900 dark:text-zinc-50">
-                2022
-              </time>
-              {' '}
-              BSEにより200頭を殺処分
-            </li>
-            <li>
-              <time dateTime="2025" className="font-medium text-zinc-900 dark:text-zinc-50">
-                2025
-              </time>
-              {' '}
-              再エネ比率30%達成
-            </li>
-          </ol>
-        </details>
       </motion.section>
 
       {/* Location Section */}
