@@ -37,21 +37,22 @@ export default function NotFound() {
             </motion.h1>
           </div>
 
-          {/* Back Button - Absolutely positioned at bottom */}
-          <motion.div
--            initial={{ opacity: 0, y: 10 }}
--            animate={{ opacity: 1, y: 0 }}
--            transition={{ delay: 0.6, duration: 0.3 }}
--            className="absolute bottom-4 left-1/2 -translate-x-1/2"
--          >
-            <Link
-              href="/home"
-              className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
-            >
-              ← 戻る
-            </Link>
-          </motion.div>
         </div>
+
+        {/* Back Button - Positioned below image */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.3 }}
+          className="flex justify-center mt-4"
+        >
+          <Link
+            href="/home"
+            className="rounded-lg bg-blue-500 px-5 py-2 text-sm font-medium text-white hover:bg-blue-600 dark:hover:bg-blue-400"
+          >
+            ← 戻る
+          </Link>
+        </motion.div>
       </div>
 
       {/* Footer */}
