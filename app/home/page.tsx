@@ -117,8 +117,8 @@ export default function DosankoDairyHome() {
             低温殺菌ライン導入
           </li>
           <li>
-            <time dateTime="2000" className="font-medium text-zinc-900 dark:text-zinc-50">
-              2000
+            <time dateTime="2005" className="font-medium text-zinc-900 dark:text-zinc-50">
+              2005
             </time>
             {' '}
             廃業
