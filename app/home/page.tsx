@@ -104,7 +104,7 @@ export default function DosankoDairyHome() {
               </div>
             </div>
           </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/6F918E3F-C64A-4E60-BE4B-D031AC2AE091.png)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="1993" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
