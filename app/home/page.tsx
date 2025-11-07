@@ -91,14 +91,14 @@ export default function DosankoDairyHome() {
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="1990" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              <time dateTime="1990" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
                 1990年
               </time>
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900">
                   創業
                 </h3>
-                <p className="text-sm sm:text-base text-white/90">
+                <p className="text-sm sm:text-base text-zinc-800">
                   創業者・佐藤太一が、北海道十勝地方で「佐藤牧場」を創業。乳牛5頭からスタートする。
                 </p>
               </div>
@@ -107,14 +107,14 @@ export default function DosankoDairyHome() {
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="1993" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              <time dateTime="1993" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
                 1993年
               </time>
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900">
                   ブランド化と瓶販売開始
                 </h3>
-                <p className="text-sm sm:text-base text-white/90">
+                <p className="text-sm sm:text-base text-zinc-800">
                   口コミで評判が広がり、需要が増加。小規模な低温殺菌設備を導入し、「道産子牛乳」としてブランド化、瓶での販売を開始する。
                 </p>
               </div>
@@ -123,14 +123,14 @@ export default function DosankoDairyHome() {
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="1997" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              <time dateTime="1997" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
                 1997年
               </time>
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900">
                   「みるく小屋」オープン
                 </h3>
-                <p className="text-sm sm:text-base text-white/90">
+                <p className="text-sm sm:text-base text-zinc-800">
                   経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製ソフトクリームとヨーグルトが観光客の人気を博し、経営が軌道に乗る。
                 </p>
               </div>
@@ -139,14 +139,14 @@ export default function DosankoDairyHome() {
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="2002" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              <time dateTime="2002" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
                 2002年
               </time>
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900">
                   BSE問題による危機
                 </h3>
-                <p className="text-sm sm:text-base text-white/90">
+                <p className="text-sm sm:text-base text-zinc-800">
                   BSE問題が発生。深刻な風評被害に見舞われ、牛乳・乳製品の消費が全般的に落ち込み、売上が激減する。
                 </p>
               </div>
@@ -155,14 +155,14 @@ export default function DosankoDairyHome() {
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="2004" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              <time dateTime="2004" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
                 2004年
               </time>
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900">
                   経営危機
                 </h3>
-                <p className="text-sm sm:text-base text-white/90">
+                <p className="text-sm sm:text-base text-zinc-800">
                   飼料価格の高騰が続く中、大型台風が地域を直撃。牛舎と設備に大きな被害を受ける。創業者の体調不良も重なり、事業継続が困難となる。
                 </p>
               </div>
@@ -171,14 +171,14 @@ export default function DosankoDairyHome() {
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="2005" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
+              <time dateTime="2005" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight">
                 2005年
               </time>
               <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900">
                   廃業
                 </h3>
-                <p className="text-sm sm:text-base text-white/90">
+                <p className="text-sm sm:text-base text-zinc-800">
                   再建を断念し、廃業。15年の歴史に幕を下ろす。
                 </p>
               </div>
