@@ -89,7 +89,7 @@ export default function DosankoDairyHome() {
         </h2>
         <ol className="space-y-4">
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="1990" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
                 1990年
@@ -105,7 +105,7 @@ export default function DosankoDairyHome() {
             </div>
           </li>
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="1993" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
                 1993年
@@ -121,7 +121,7 @@ export default function DosankoDairyHome() {
             </div>
           </li>
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="1997" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
                 1997年
@@ -137,7 +137,7 @@ export default function DosankoDairyHome() {
             </div>
           </li>
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="2002" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
                 2002年
@@ -153,7 +153,7 @@ export default function DosankoDairyHome() {
             </div>
           </li>
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="2004" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
                 2004年
@@ -169,7 +169,7 @@ export default function DosankoDairyHome() {
             </div>
           </li>
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
-            <div className="absolute inset-0 bg-black/40" />
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="2005" className="text-3xl sm:text-4xl font-bold text-white leading-tight">
                 2005年
