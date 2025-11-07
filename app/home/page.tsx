@@ -88,7 +88,7 @@ export default function DosankoDairyHome() {
           沿革
         </h2>
         <ol className="space-y-4">
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/12852993-4EA1-41C1-A5ED-01961829EDBE.png)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
               <time dateTime="1990" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
