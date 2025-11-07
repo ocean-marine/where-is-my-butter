@@ -88,47 +88,65 @@ export default function DosankoDairyHome() {
           沿革
         </h2>
         <ol className="space-y-4 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          <li>
-            <time dateTime="1990" className="font-medium text-zinc-900 dark:text-zinc-50">
-              1990年
-            </time>
-            {' '}
-            創業者・佐藤太一が、北海道十勝地方で「佐藤牧場」を創業。乳牛5頭からスタートする。
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center p-4 sm:p-6" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="relative">
+              <time dateTime="1990" className="font-medium text-white">
+                1990年
+              </time>
+              {' '}
+              <span className="text-white">創業者・佐藤太一が、北海道十勝地方で「佐藤牧場」を創業。乳牛5頭からスタートする。</span>
+            </div>
           </li>
-          <li>
-            <time dateTime="1993" className="font-medium text-zinc-900 dark:text-zinc-50">
-              1993年
-            </time>
-            {' '}
-            口コミで評判が広がり、需要が増加。小規模な低温殺菌設備を導入し、「道産子牛乳」としてブランド化、瓶での販売を開始する。
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center p-4 sm:p-6" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="relative">
+              <time dateTime="1993" className="font-medium text-white">
+                1993年
+              </time>
+              {' '}
+              <span className="text-white">口コミで評判が広がり、需要が増加。小規模な低温殺菌設備を導入し、「道産子牛乳」としてブランド化、瓶での販売を開始する。</span>
+            </div>
           </li>
-          <li>
-            <time dateTime="1997" className="font-medium text-zinc-900 dark:text-zinc-50">
-              1997年
-            </time>
-            {' '}
-            経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製ソフトクリームとヨーグルトが観光客の人気を博し、経営が軌道に乗る。
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center p-4 sm:p-6" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="relative">
+              <time dateTime="1997" className="font-medium text-white">
+                1997年
+              </time>
+              {' '}
+              <span className="text-white">経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製ソフトクリームとヨーグルトが観光客の人気を博し、経営が軌道に乗る。</span>
+            </div>
           </li>
-          <li>
-            <time dateTime="2002" className="font-medium text-zinc-900 dark:text-zinc-50">
-              2002年
-            </time>
-            {' '}
-            BSE問題が発生。深刻な風評被害に見舞われ、牛乳・乳製品の消費が全般的に落ち込み、売上が激減する。
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center p-4 sm:p-6" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="relative">
+              <time dateTime="2002" className="font-medium text-white">
+                2002年
+              </time>
+              {' '}
+              <span className="text-white">BSE問題が発生。深刻な風評被害に見舞われ、牛乳・乳製品の消費が全般的に落ち込み、売上が激減する。</span>
+            </div>
           </li>
-          <li>
-            <time dateTime="2004" className="font-medium text-zinc-900 dark:text-zinc-50">
-              2004年
-            </time>
-            {' '}
-            飼料価格の高騰が続く中、大型台風が地域を直撃。牛舎と設備に大きな被害を受ける。創業者の体調不良も重なり、事業継続が困難となる。
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center p-4 sm:p-6" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="relative">
+              <time dateTime="2004" className="font-medium text-white">
+                2004年
+              </time>
+              {' '}
+              <span className="text-white">飼料価格の高騰が続く中、大型台風が地域を直撃。牛舎と設備に大きな被害を受ける。創業者の体調不良も重なり、事業継続が困難となる。</span>
+            </div>
           </li>
-          <li>
-            <time dateTime="2005" className="font-medium text-zinc-900 dark:text-zinc-50">
-              2005年
-            </time>
-            {' '}
-            再建を断念し、廃業。15年の歴史に幕を下ろす。
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center p-4 sm:p-6" style={{ backgroundImage: 'url(/IMG_6583.jpeg)' }}>
+            <div className="absolute inset-0 bg-black/40" />
+            <div className="relative">
+              <time dateTime="2005" className="font-medium text-white">
+                2005年
+              </time>
+              {' '}
+              <span className="text-white">再建を断念し、廃業。15年の歴史に幕を下ろす。</span>
+            </div>
           </li>
         </ol>
 
