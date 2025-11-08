@@ -99,7 +99,7 @@ export default function DosankoDairyHome() {
                   創業
                 </h3>
                 <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  創業者・佐藤太一が、北海道十勝地方で「佐藤牧場」を創業。乳牛5頭からスタートする。
+                  創業者が、北海道十勝地方で「道産子乳業」を創業。乳牛5頭からスタートする。
                 </p>
               </div>
             </div>
@@ -147,7 +147,7 @@ export default function DosankoDairyHome() {
                   「みるく小屋」オープン
                 </h3>
                 <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製ソフトクリームとヨーグルトが観光客の人気を博し、経営が軌道に乗る。
+                  経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製アイスとヨーグルトが観光客の人気を博し、経営が軌道に乗る。
                 </p>
               </div>
             </div>
