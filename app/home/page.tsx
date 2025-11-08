@@ -120,6 +120,22 @@ export default function DosankoDairyHome() {
               </div>
             </div>
           </li>
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/notfound.jpeg)' }}>
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
+            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
+              <time dateTime="1994" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
+                1994年
+              </time>
+              <div className="space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
+                  第二牛舎を建築
+                </h3>
+                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
+                  経営拡大に向けて、東の方角に第二牛舎を建築。乳牛の飼育頭数を増やし、生産体制の強化を図る。
+                </p>
+              </div>
+            </div>
+          </li>
           <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/909EFD2E-B42C-4FED-ACE4-1CABDF1F8D03.jpeg)' }}>
             <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
             <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
@@ -132,6 +148,22 @@ export default function DosankoDairyHome() {
                 </h3>
                 <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
                   経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製ソフトクリームとヨーグルトが観光客の人気を博し、経営が軌道に乗る。
+                </p>
+              </div>
+            </div>
+          </li>
+          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/notfound.jpeg)' }}>
+            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
+            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
+              <time dateTime="2000" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
+                2000年
+              </time>
+              <div className="space-y-2">
+                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
+                  道産子アイス大ヒット
+                </h3>
+                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
+                  「みるく小屋」で販売していた自家製アイスが全国のコンビニエンスストアでの販売が決定。「道産子アイス」として全国展開を開始し、大きな話題となる。
                 </p>
               </div>
             </div>
