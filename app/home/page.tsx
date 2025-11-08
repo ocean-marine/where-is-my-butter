@@ -28,13 +28,32 @@ const HistoryItem = ({ imageUrl, year, title, description }: {
   description: string
 }) => {
   const [imageLoaded, setImageLoaded] = useState(true)
+  const [isPressed, setIsPressed] = useState(false)
 
   const handleImageError = () => {
     setImageLoaded(false)
   }
 
+  const handlePressStart = () => {
+    setIsPressed(true)
+  }
+
+  const handlePressEnd = () => {
+    setIsPressed(false)
+  }
+
+  const displayImageUrl = isPressed ? 'https://images.dog.ceo/breeds/maltese/n02085936_4271.jpg' : imageUrl
+
   return (
-    <li className={`relative overflow-hidden rounded-lg bg-cover bg-center h-40 ${!imageLoaded ? 'border-2 border-gray-300 dark:border-gray-600' : ''}`} style={imageLoaded ? { backgroundImage: `url(${imageUrl})` } : {}}>
+    <li
+      className={`relative overflow-hidden rounded-lg bg-cover bg-center h-40 ${!imageLoaded ? 'border-2 border-gray-300 dark:border-gray-600' : ''}`}
+      style={imageLoaded ? { backgroundImage: `url(${displayImageUrl})` } : {}}
+      onMouseDown={handlePressStart}
+      onMouseUp={handlePressEnd}
+      onMouseLeave={handlePressEnd}
+      onTouchStart={handlePressStart}
+      onTouchEnd={handlePressEnd}
+    >
       {imageLoaded && <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={imageUrl} alt="" style={{ display: 'none' }} onError={handleImageError} />
