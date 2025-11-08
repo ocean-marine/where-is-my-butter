@@ -42,7 +42,7 @@ const HistoryItem = ({ imageUrl, year, title, description }: {
     setIsPressed(false)
   }
 
-  const displayImageUrl = isPressed ? 'https://images.dog.ceo/breeds/maltese/n02085936_4271.jpg' : imageUrl
+  const displayImageUrl = isPressed ? 'https://upload.wikimedia.org/wikipedia/commons/9/92/%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A%E6%97%97.jpg' : imageUrl
 
   return (
     <li
