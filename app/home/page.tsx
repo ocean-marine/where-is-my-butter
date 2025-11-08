@@ -21,11 +21,12 @@ const TRANSITION_SECTION = {
   duration: 0.4,
 }
 
-const HistoryItem = ({ imageUrl, year, title, description }: {
+const HistoryItem = ({ imageUrl, year, title, description, showAlternateImageOnPress = true }: {
   imageUrl: string
   year: string
   title: string
   description: string
+  showAlternateImageOnPress?: boolean
 }) => {
   const [imageLoaded, setImageLoaded] = useState(true)
   const [isPressed, setIsPressed] = useState(false)
@@ -42,7 +43,7 @@ const HistoryItem = ({ imageUrl, year, title, description }: {
     setIsPressed(false)
   }
 
-  const displayImageUrl = isPressed ? 'https://upload.wikimedia.org/wikipedia/commons/9/92/%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A%E6%97%97.jpg' : imageUrl
+  const displayImageUrl = showAlternateImageOnPress && isPressed ? 'https://upload.wikimedia.org/wikipedia/commons/9/92/%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A%E6%97%97.jpg' : imageUrl
 
   return (
     <li
@@ -147,30 +148,35 @@ export default function DosankoDairyHome() {
             year="1990"
             title="創業"
             description="創業者が、北海道十勝地方で「道産子乳業」を創業。乳牛5頭からスタートする。"
+            showAlternateImageOnPress={false}
           />
           <HistoryItem
             imageUrl="/notfound.png"
             year="1993"
             title="ブランド化と瓶販売開始"
             description="口コミで評判が広がり、需要が増加。小規模な低温殺菌設備を導入し、「道産子牛乳」としてブランド化、瓶での販売を開始する。"
+            showAlternateImageOnPress={false}
           />
           <HistoryItem
             imageUrl="/notfound.jpeg"
             year="1994"
             title="第二牛舎を建築"
             description="経営拡大に向けて、東の方角に第二牛舎を建築。乳牛の飼育頭数を増やし、生産体制の強化を図る。"
+            showAlternateImageOnPress={false}
           />
           <HistoryItem
             imageUrl="/909EFD2E-B42C-4FED-ACE4-1CABDF1F8D03.jpeg"
             year="1997"
             title="「みるく小屋」オープン"
             description="経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製アイスとヨーグルトが観光客の人気を博し、経営が軌道に乗る。"
+            showAlternateImageOnPress={false}
           />
           <HistoryItem
             imageUrl="/notfound.jpeg"
             year="2000"
             title="道産子アイス大ヒット"
             description="「みるく小屋」で販売していた自家製アイスが全国のコンビニエンスストアでの販売が決定。「道産子アイス」として全国展開を開始し、大きな話題となる。"
+            showAlternateImageOnPress={false}
           />
           <HistoryItem
             imageUrl="/notfound.jpeg"
