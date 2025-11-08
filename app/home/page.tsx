@@ -21,11 +21,12 @@ const TRANSITION_SECTION = {
   duration: 0.4,
 }
 
-const HistoryItem = ({ imageUrl, year, title, description }: {
+const HistoryItem = ({ imageUrl, year, title, description, showAlternateImageOnPress = true }: {
   imageUrl: string
   year: string
   title: string
   description: string
+  showAlternateImageOnPress?: boolean
 }) => {
   const [imageLoaded, setImageLoaded] = useState(true)
   const [isPressed, setIsPressed] = useState(false)
@@ -42,7 +43,7 @@ const HistoryItem = ({ imageUrl, year, title, description }: {
     setIsPressed(false)
   }
 
-  const displayImageUrl = isPressed ? 'https://upload.wikimedia.org/wikipedia/commons/9/92/%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A%E6%97%97.jpg' : imageUrl
+  const displayImageUrl = showAlternateImageOnPress && isPressed ? 'https://upload.wikimedia.org/wikipedia/commons/9/92/%E6%B5%B7%E4%B8%8A%E8%87%AA%E8%A1%9B%E9%9A%8A%E6%97%97.jpg' : imageUrl
 
   return (
     <li
