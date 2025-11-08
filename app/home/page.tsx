@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'motion/react'
+import { useState } from 'react'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -18,6 +19,40 @@ const VARIANTS_SECTION = {
 
 const TRANSITION_SECTION = {
   duration: 0.4,
+}
+
+const HistoryItem = ({ imageUrl, year, title, description }: {
+  imageUrl: string
+  year: string
+  title: string
+  description: string
+}) => {
+  const [imageLoaded, setImageLoaded] = useState(true)
+
+  const handleImageError = () => {
+    setImageLoaded(false)
+  }
+
+  return (
+    <li className={`relative overflow-hidden rounded-lg bg-cover bg-center h-40 ${!imageLoaded ? 'border-2 border-gray-300 dark:border-gray-600' : ''}`} style={imageLoaded ? { backgroundImage: `url(${imageUrl})` } : {}}>
+      {imageLoaded && <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={imageUrl} alt="" style={{ display: 'none' }} onError={handleImageError} />
+      <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
+        <time dateTime={year} className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
+          {year}年
+        </time>
+        <div className="space-y-2">
+          <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
+            {title}
+          </h3>
+          <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
+            {description}
+          </p>
+        </div>
+      </div>
+    </li>
+  )
 }
 
 export default function DosankoDairyHome() {
@@ -88,134 +123,54 @@ export default function DosankoDairyHome() {
           沿革
         </h2>
         <ol className="space-y-4">
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/12852993-4EA1-41C1-A5ED-01961829EDBE.png)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="1990" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                1990年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  創業
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  創業者が、北海道十勝地方で「道産子乳業」を創業。乳牛5頭からスタートする。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/notfound.png)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="1993" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                1993年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  ブランド化と瓶販売開始
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  口コミで評判が広がり、需要が増加。小規模な低温殺菌設備を導入し、「道産子牛乳」としてブランド化、瓶での販売を開始する。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/notfound.jpeg)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="1994" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                1994年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  第二牛舎を建築
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  経営拡大に向けて、東の方角に第二牛舎を建築。乳牛の飼育頭数を増やし、生産体制の強化を図る。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/909EFD2E-B42C-4FED-ACE4-1CABDF1F8D03.jpeg)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="1997" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                1997年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  「みるく小屋」オープン
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製アイスとヨーグルトが観光客の人気を博し、経営が軌道に乗る。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/notfound.jpeg)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="2000" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                2000年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  道産子アイス大ヒット
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  「みるく小屋」で販売していた自家製アイスが全国のコンビニエンスストアでの販売が決定。「道産子アイス」として全国展開を開始し、大きな話題となる。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/notfound.jpeg)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="2002" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                2002年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  BSE問題による危機
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  BSE問題が発生。深刻な風評被害に見舞われ、牛乳・乳製品の消費が全般的に落ち込み、売上が激減する。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/260EF639-0DBD-4D94-8865-1ED5798A6ABF.jpeg)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="2004" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                2004年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  経営危機
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  飼料価格の高騰が続く中、大型台風が地域を直撃。牛舎と設備に大きな被害を受ける。創業者の体調不良も重なり、事業継続が困難となる。
-                </p>
-              </div>
-            </div>
-          </li>
-          <li className="relative overflow-hidden rounded-lg bg-cover bg-center h-40" style={{ backgroundImage: 'url(/5ED802FF-3458-4A2F-8270-873D1A4992D3.jpeg)' }}>
-            <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/40" />
-            <div className="relative h-full flex flex-col justify-between p-4 sm:p-6">
-              <time dateTime="2005" className="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                2005年
-              </time>
-              <div className="space-y-2">
-                <h3 className="text-lg sm:text-xl font-semibold text-zinc-900" style={{ textShadow: '0 0 3px rgba(255,255,255,0.8), 0 0 6px rgba(255,255,255,0.6)' }}>
-                  廃業
-                </h3>
-                <p className="text-sm sm:text-base text-zinc-800" style={{ textShadow: '0 0 2px rgba(255,255,255,0.7), 0 0 4px rgba(255,255,255,0.5)' }}>
-                  再建を断念し、廃業。15年の歴史に幕を下ろす。
-                </p>
-              </div>
-            </div>
-          </li>
+          <HistoryItem
+            imageUrl="/12852993-4EA1-41C1-A5ED-01961829EDBE.png"
+            year="1990"
+            title="創業"
+            description="創業者が、北海道十勝地方で「道産子乳業」を創業。乳牛5頭からスタートする。"
+          />
+          <HistoryItem
+            imageUrl="/notfound.png"
+            year="1993"
+            title="ブランド化と瓶販売開始"
+            description="口コミで評判が広がり、需要が増加。小規模な低温殺菌設備を導入し、「道産子牛乳」としてブランド化、瓶での販売を開始する。"
+          />
+          <HistoryItem
+            imageUrl="/notfound.jpeg"
+            year="1994"
+            title="第二牛舎を建築"
+            description="経営拡大に向けて、東の方角に第二牛舎を建築。乳牛の飼育頭数を増やし、生産体制の強化を図る。"
+          />
+          <HistoryItem
+            imageUrl="/909EFD2E-B42C-4FED-ACE4-1CABDF1F8D03.jpeg"
+            year="1997"
+            title="「みるく小屋」オープン"
+            description="経営多角化のため、牧場敷地内に直売所「みるく小屋」をオープン。自家製アイスとヨーグルトが観光客の人気を博し、経営が軌道に乗る。"
+          />
+          <HistoryItem
+            imageUrl="/notfound.jpeg"
+            year="2000"
+            title="道産子アイス大ヒット"
+            description="「みるく小屋」で販売していた自家製アイスが全国のコンビニエンスストアでの販売が決定。「道産子アイス」として全国展開を開始し、大きな話題となる。"
+          />
+          <HistoryItem
+            imageUrl="/notfound.jpeg"
+            year="2002"
+            title="BSE問題による危機"
+            description="BSE問題が発生。深刻な風評被害に見舞われ、牛乳・乳製品の消費が全般的に落ち込み、売上が激減する。"
+          />
+          <HistoryItem
+            imageUrl="/260EF639-0DBD-4D94-8865-1ED5798A6ABF.jpeg"
+            year="2004"
+            title="経営危機"
+            description="飼料価格の高騰が続く中、大型台風が地域を直撃。牛舎と設備に大きな被害を受ける。創業者の体調不良も重なり、事業継続が困難となる。"
+          />
+          <HistoryItem
+            imageUrl="/5ED802FF-3458-4A2F-8270-873D1A4992D3.jpeg"
+            year="2005"
+            title="廃業"
+            description="再建を断念し、廃業。15年の歴史に幕を下ろす。"
+          />
         </ol>
 
       </motion.section>
