@@ -93,7 +93,7 @@ export default function DosankoDairyHome() {
       >
         <div className="space-y-4">
           <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 leading-tight">
-            しぼりたての、<br />北のまじめ❄️
+            しぼりたての、北のまじめ❄️
           </h1>
           <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-md">
             十勝の朝霧からはじまる一杯を、そのまま。
