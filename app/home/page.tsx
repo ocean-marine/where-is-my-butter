@@ -182,7 +182,8 @@ export default function DosankoDairyHome() {
             imageUrl="/notfound.jpeg"
             year="2002"
             title="BSE問題による危機"
-            description="BSE問題が発生。深刻な風評被害に見舞われ、牛乳・乳製品の消費が全般的に落ち込み、売上が激減する。"
+            description="BSE問題が発生。牛の殺処分を余儀なくされ、牛乳・乳製品の消費が全般的に落ち込み、売上が激減する。"
+            showAlternateImageOnPress={false}
           />
           <HistoryItem
             imageUrl="/260EF639-0DBD-4D94-8865-1ED5798A6ABF.jpeg"
