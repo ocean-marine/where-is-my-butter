@@ -194,43 +194,12 @@ export default function DosankoDairyHome() {
           <HistoryItem
             imageUrl="/5ED802FF-3458-4A2F-8270-873D1A4992D3.jpeg"
             year="2005"
-            title="廃業"
-            description="再建を断念し、廃業。15年の歴史に幕を下ろす。"
+            title="〼〼"
+            description="〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼"
           />
         </ol>
 
-      </motion.section>
-
-      {/* Location Section */}
-      <motion.section
-        id="location"
-        aria-labelledby="location-title"
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-        className="space-y-3"
-      >
-        <h2
-          id="location-title"
-          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
-        >
-          所在地
-        </h2>
-        <address className="not-italic text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
-          北海道河西郡大正村新通114-51
-        </address>
-        <a
-          href="https://maps.app.goo.gl/4bJ61E5oaK8o7wHy8"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-        >
-          地図で開く
-        </a>
-        <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-          ※工場見学は事前予約制です
-        </p>
-      </motion.section>
-      
+      </motion.section>     
       
       {/* Contact CTA Section */}
       <motion.section
@@ -263,6 +232,36 @@ export default function DosankoDairyHome() {
             </a>
           </div>
         </div>
+      </motion.section>
+
+            {/* Location Section */}
+      <motion.section
+        id="location"
+        aria-labelledby="location-title"
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+        className="space-y-3"
+      >
+        <h2
+          id="location-title"
+          className="text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-zinc-50"
+        >
+          所在地
+        </h2>
+        <address className="not-italic text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+          北海道河西郡大正村新通114-51
+        </address>
+        <a
+          href="https://maps.app.goo.gl/4bJ61E5oaK8o7wHy8"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex text-sm font-medium text-blue-600 transition-colors hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+        >
+          地図で開く
+        </a>
+        <p className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
+          ※工場見学は事前予約制です
+        </p>
       </motion.section>
     
     </motion.main>
