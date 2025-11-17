@@ -161,7 +161,7 @@ export default function DosankoDairyHome() {
             imageUrl="/notfound.jpeg"
             year="1994"
             title="第二牛舎を建築"
-            description="経営拡大に向けて、東の方角に第二牛舎を建築。乳牛の飼育頭数を増やし、生産体制の強化を図る。"
+            description="経営拡大に向けて、第二牛舎を建築。乳牛の飼育頭数を増やし、生産体制の強化を図る。"
             showAlternateImageOnPress={false}
           />
           <HistoryItem
@@ -190,12 +190,14 @@ export default function DosankoDairyHome() {
             year="2004"
             title="経営危機"
             description="飼料価格の高騰が続く中、大型台風が地域を直撃。牛舎と設備に大きな被害を受ける。創業者の体調不良も重なり、事業継続が困難となる。"
+            showAlternateImageOnPress={false}
           />
           <HistoryItem
             imageUrl="/5ED802FF-3458-4A2F-8270-873D1A4992D3.jpeg"
             year="2005"
             title="〼〼"
             description="〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼〼"
+            showAlternateImageOnPress={false}
           />
         </ol>
 
@@ -223,7 +225,7 @@ export default function DosankoDairyHome() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
             <a
-              href="https://dairyfarmerjapan.hateblo.jp/"
+              href="https://dairyfarmerjapan.hateblo.jp/entry/2000/04/8/000000"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center rounded-lg bg-white text-blue-600 px-6 py-3 text-sm font-semibold transition-all hover:bg-blue-50 hover:shadow-lg dark:bg-zinc-900 dark:text-cyan-400 dark:hover:bg-zinc-800"
